@@ -17,5 +17,6 @@ steps:
 
 - script: |
     npm install --legacy-peer-deps
+    export NODE_OPTIONS=--openssl-legacy-provider
     npm run build
   displayName: 'npm install and build'
